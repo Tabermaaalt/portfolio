@@ -22,11 +22,12 @@
   <body>
     <header>
       <nav>
-        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" tabindex="-1" />
+        <label for="menu-toggle" class="hamburger" aria-label="Menu" tabindex="0">
           <span></span>
           <span></span>
           <span></span>
-        </button>
+        </label>
         <div class="nav-links">
           <a href="index.html" class="nav-link">Accueil</a>
           <a href="cv.html" class="nav-link">CV</a>

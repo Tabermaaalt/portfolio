@@ -425,6 +425,14 @@ footer p {
   display: none;
 }
 
+.menu-toggle {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
 @media (max-width: 425px) {
   header {
     padding: 16px 24px;
@@ -481,8 +489,15 @@ footer p {
     gap: 0;
   }
 
-  nav:focus-within .nav-links {
+  nav:has(.hamburger:focus-visible) .nav-links,
+  nav:has(#menu-toggle:checked) .nav-links {
     display: flex;
+  }
+
+  .menu-toggle:focus-visible + .hamburger {
+    outline: 4px solid #0056b3;
+    outline-offset: 4px;
+    border-radius: 4px;
   }
 
   .nav-links .nav-link {
