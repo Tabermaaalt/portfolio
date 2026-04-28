@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="projets, IA, personnel, habitudes, agent" />
+    <meta
+      name="description"
+      content="page contenant des diagrammes et un lien vers des projets que j'ai pu faire sur mon temps libre. Il y a mon infrastructure homelab, mon stack d'ia agentique et un projet perso."
+    />
+    <meta name="author" content="Tabermaaalt" />
+    <link rel="stylesheet" href="../styles/projets.css" />
+    <link rel="icon" href="../images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>PROJETS</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="cv.html" class="nav-link">CV</a>
+          <a href="projets.html" class="nav-link active">Projets</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2 class="page-titre">Mes Projets</h2>
+
+      <div class="popup-wrapper" id="popup-1">
+        <label class="popup-overlay">
+          <img
+            src="../images/diagramme_homelab.png"
+            alt="Diagramme représentant une infrastructure serveur - Fait avec FlossFlow, logiciel open source."
+            class="popup-image"
+          />
+          <a href="#" class="popup-close">✕</a>
+        </label>
+      </div>
+
+      <div class="popup-wrapper" id="popup-2">
+        <label class="popup-overlay">
+          <img
+            src="../images/diagrame_hermes.png"
+            alt="Diagramme représentant une infrastructure d'intelligence artificielle - Fait avec Excalidraw, logiciel open source."
+            class="popup-image"
+          />
+          <a href="#" class="popup-close">✕</a>
+        </label>
+      </div>
+
+      <div class="projets">
+        <article class="carte">
+          <div class="projet-inner">
+            <div class="projet-image">
+              <img
+                src="../images/domaintechnik-ledl-net-VHmBX7FnXw0-unsplash.jpg"
+                alt="Photo de rack serveur - Utilisation gratuite sous la Licence Unsplash - Domaintechnik Ledl.net"
+              />
+            </div>
+            <div class="projet-info">
+              <h3>Projet 1 - Homelab</h3>
+              <p>
+                Homelab basé sur Proxmox — 4 nœuds (Proxmox 1 à 4) sur un réseau
+                local, avec une connexion entrante via Wireguard (VPN), un DNS
+                custom via PiHole(DNS), et un reverse proxy via NGINX Proxy
+                Manager (NPM).
+              </p>
+              <a href="#popup-1" class="projet-link" tabindex="0">
+                plus de détails →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte">
+          <div class="projet-inner">
+            <div class="projet-image">
+              <img
+                src="../images/igor-omilaev-FHgWFzDDAOs-unsplash.jpg"
+                alt="Photo de deux doigts qui se rejoignent avec AI au centre - Utilisation gratuite sous la Licence Unsplash - Igor Omilaev"
+              />
+            </div>
+            <div class="projet-info">
+              <h3>Projet 2 - J.A.R.V.I.S.</h3>
+              <p>
+                "Hermes — ton assistant personnel, polyvalent et expert. Je joue
+                trois rôles selon tes besoins :
+              </p>
+              <ul>
+                <li>
+                  🤖 Jarvis — gestion de ta vie personnelle, organisation,
+                  rappels
+                </li>
+                <li>
+                  🔍 Vision — recherches, analyses, bases de connaissances
+                </li>
+                <li>
+                  ⚙️ Ultron — développement, codage, infrastructure système.
+                </li>
+              </ul>
+              <a href="#popup-2" class="projet-link" tabindex="0">
+                plus de détails →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte">
+          <div class="projet-inner">
+            <div class="projet-image">
+              <img
+                src="../images/image_questlog.png"
+                alt="screenshot site questlog"
+              />
+            </div>
+            <div class="projet-info">
+              <h3>Projet 3 - QuestLog</h3>
+              <p>
+                QuestLog est un RPG de suivi d'habitudes auto-hébergé,
+                alternative légère à Habitica, avec un backend Python/FastAPI et
+                un frontend HTML unique. Codé par Jarvis, il transforme le suivi
+                des habitudes, des tâches et des récompenses en un jeu de rôle
+                avec des mécaniques de personnages (XP, niveaux, stats, HP).
+              </p>
+              <a href="#" target="_blank"> lien → </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; 2026 — Mon Portfolio /// Les photos proviennent soit de
+        générations par IA, soit de moi, soit d'Unsplash
+      </p>
+    </footer>
+  </body>
+</html>

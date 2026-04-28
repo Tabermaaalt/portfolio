@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="accueil, passions, photo, dessin, présentation"
+    />
+    <meta
+      name="description"
+      content="page d'accueil de mon portfolio, contenant une simple présentation et quelques images montrant ce que j'aime."
+    />
+    <meta name="author" content="Tabermaaalt" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" href="../images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ACCUEIL</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Accueil</a>
+          <a href="cv.html" class="nav-link">CV</a>
+          <a href="projets.html" class="nav-link">Projets</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="bento section1">
+        <div class="bento-gauche">
+          <img
+            src="../images/dessin.svg"
+            alt="Dessin d'une hélice d'adn - image générée par IA, Comfy UI GNU General Public License v3"
+          />
+        </div>
+        <div class="bento-contenu">
+          <h1>Présentation personnelle</h1>
+          <p>
+            Bienvenue sur mon portfolio. Je suis passionné par l'informatique,
+            le design, la photographie et l'art. <br />Explorez
+            <span
+              ><a class="bento-contenu-link" href="projets.html"
+                >mes réalisations</a
+              ></span
+            >
+            <br />et découvrez
+            <span
+              ><a class="bento-contenu-link" href="cv.html"
+                >mon parcours</a
+              ></span
+            >.
+          </p>
+          <div class="bento-photos">
+            <div class="carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img
+                    class="bento-photo"
+                    src="../images/photo_1.jpg"
+                    alt="Photo de la mer sur une falaise - Photo Par Moi"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    class="bento-photo"
+                    src="../images/photo_2.jpg"
+                    alt="Photo d'un couloir au Taj Mahal - Photo Par Moi"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    class="bento-photo"
+                    src="../images/photo_3.jpg"
+                    alt="Photo d'une rue à Vienne - Photo Par Moi"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    class="bento-photo"
+                    src="../images/photo_4.jpg"
+                    alt="Photo d'une rue à vienne - Photo Par Moi"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    class="bento-photo"
+                    src="../images/photo_5.jpg"
+                    alt="Photo d'une rue à vienne - Photo Par Moi"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="popup-wrapper" id="popup-1">
+          <label class="popup-overlay">
+            <div class="container">
+              <div class="formulaire">
+                <h2>Envoyer un email</h2>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="..." required />
+                <label for="textarea">Votre message</label>
+                <textarea rows="4" placeholder="..." required></textarea>
+                <a href="#popup-2" class="btn">Envoyer</a>
+              </div>
+            </div>
+            <div class="popup-wrapper" id="sent-1">
+              <div id="success-message">Bien envoyé !</div>
+            </div>
+            <a href="#" class="popup-close">✕</a>
+          </label>
+        </div>
+        <!--  -->
+        <div class="popup-wrapper" id="popup-2">
+          <label class="popup-overlay">
+            <div class="popup-wrapper" id="sent-1">
+              <div id="success-message">Bien envoyé !</div>
+            </div>
+            <a href="#" class="popup-close">✕</a>
+          </label>
+        </div>
+
+        <a href="#popup-1" tabindex="0"> → ME CONTACTER ← </a>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2026 — Mon Portfolio /// Les photos proviennent soit de
+        générations par IA, soit de moi, soit d'Unsplash
+      </p>
+    </footer>
+  </body>
+</html>
